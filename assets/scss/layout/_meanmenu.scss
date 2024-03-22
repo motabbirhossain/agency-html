@@ -14,26 +14,24 @@
 			position: relative;
 			>a {
 				display: block;
-				padding: 25px 0px;
+				padding: 19px 0px;
 				overflow: hidden;
 				font-family: $heading-font;
 				font-style: normal;
-				font-weight: 600;
-				font-size: 16px;
-				line-height: 150%;
 				text-align: center;
 				text-transform: capitalize;
-				color:$black;
-				text-shadow: 0 0 0.1px currentColor;
+				color:$white;
+				font-size: 19px;
+				line-height: 32px;
 			}
 			&:hover {
 				>a {
-					color: $textcolor-two;
+					color: #25234d;
 				}
 				>ul {
 					opacity: 1;
 					visibility: visible;
-					transform: translateY(0);
+					transform: translateY(3px);
 				}
 			}
 

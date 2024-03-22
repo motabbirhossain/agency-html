@@ -1,9 +1,8 @@
-@charset "UTF-8";
 /*-----------------------------------------------------------------------------------
 
-    Theme Name: Azzle - AI Technology & Startup Business HTML Template
+    Theme Name: 
     Author: Motabbor Hossain
-    Description: Azzle – It’s an amazing AI Technology and startup Business. This Template mixes modern, classic, Creative, and clean styles with better UI and UX. Perfect choice for your business. This file is very well organized. This template includes 21 well-designed pages in HTML, which are easy to edit and customize to fit your needs. It’s based on 1296px Grid System.
+    Description: 
     Version: 1.0.0
 
 -----------------------------------------------------------------------------------*/
@@ -60,8 +59,8 @@ html {
     typography css start 
 ---------------------------------*/
 body {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-family: "Nexa", sans-serif;
+  font-size: 17px;
   font-weight: 600;
   color: #191919;
   line-height: 1.5;
@@ -77,7 +76,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Nexa", sans-serif;
   color: #000;
   font-weight: 700;
   line-height: 1.2;
@@ -454,120 +453,37 @@ button {
 /*------------------------
  05. preloader css
 ------------------------*/
-#loading {
-  background-color: #FFF;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 99999;
-  margin-top: 0px;
-  top: 0px;
-}
-
-#loading-center {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-#loading-center-absolute {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 200px;
-  width: 200px;
-  margin-top: -100px;
-  margin-left: -100px;
-  transform: rotate(-135deg);
-}
-
-.object {
-  border-radius: 50% 50% 50% 50%;
-  position: absolute;
-  border-top: 5px solid #F47102;
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid #F47102;
-  border-right: 5px solid transparent;
-  animation: animate 2s infinite;
-}
-
-#object_one {
-  left: 75px;
-  top: 75px;
-  width: 50px;
-  height: 50px;
-}
-
-#object_two {
-  left: 65px;
-  top: 65px;
-  width: 70px;
-  height: 70px;
-  animation-delay: 0.2s;
-}
-
-#object_three {
-  left: 55px;
-  top: 55px;
-  width: 90px;
-  height: 90px;
-  animation-delay: 0.4s;
-}
-
-#object_four {
-  left: 45px;
-  top: 45px;
-  width: 110px;
-  height: 110px;
-  animation-delay: 0.6s;
-}
-@keyframes animate {
-  50% {
-    transform: rotate(360deg) scale(0.8);
-  }
-}
 /* ---------------------------------------
   06. buttons css
  ----------------------------------------- */
-.azzle-btn {
+.agency-btn {
   display: inline-block;
   vertical-align: middle;
-  -webkit-appearance: none;
   border: none;
   outline: none !important;
-  background-color: transparent;
-  color: #000;
-  font-family: "DM Sans", sans-serif;
+  color: #171718;
+  font-family: "Nexa", sans-serif;
   padding: 12px 24px;
-  transition: 500ms;
+  transition: 700ms;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 150%;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
   position: relative;
   overflow: hidden;
   text-align: center;
   z-index: 1;
-  border-radius: 50px;
-  border: 1px solid #000;
+  font-size: 18px;
+  line-height: 1.7777777778;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 34px;
+  background-color: #ffc727;
+  transition: all 0.4s ease-in-out;
 }
-.azzle-btn:before {
-  content: "";
-  background-color: #000;
-  width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  z-index: -1;
-}
-.azzle-btn:hover {
-  border: 1px solid #000;
-  color: #FFF;
-}
-.azzle-btn:hover:before {
-  width: 100%;
+.agency-btn:hover {
+  background-color: #00dadc;
 }
 
 /*---------------------------------------
@@ -593,7 +509,7 @@ button {
   }
 }
 .sec-title__title {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Nexa", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -614,178 +530,246 @@ button {
 /* ----------------------------------
 	10. header css
  ------------------------------------ */
-.header-one {
+.main-header {
   position: relative;
   z-index: 2;
+  background-image: linear-gradient(200deg, #766bfe 0%, #6321db 100%);
 }
-.header-one .main__header__inner {
+.main-header .main-header__inner {
   display: flex;
   align-items: center;
 }
-.header-one .main-menu {
-  margin-left: 290px;
+.main-header .main-menu {
+  margin-left: 110px;
   margin-right: auto;
 }
 @media (max-width: 1199px) {
-  .header-one .main-menu {
+  .main-header .main-menu {
     margin-left: 90px;
   }
 }
-.header-one__right__info {
+.main-header__right {
   display: flex;
-  gap: 24px;
+  align-items: center;
 }
-.header-one--one {
-  position: absolute;
-  top: 0;
-  width: 100%;
+.main-header__btn {
+  border-radius: 30px;
+  background-color: #FFF;
+  padding: 17px 42px;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #6426dd;
+  font-weight: bold;
+}
+.main-header__btn:hover {
+  background: #6426dd;
+  color: #FFF;
 }
 
 /* ---------------------------------
    Mobile Menu Style 
 ------------------------------------*/
-.mobile-nav {
-  position: fixed;
-  right: -380px;
-  top: 0;
-  width: 320px;
-  height: 100vh;
-  scroll-behavior: smooth;
-  overflow-y: scroll;
-  transition: right 0.5s ease-in;
+.mobile-nav__btn {
+  width: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  cursor: pointer;
+  z-index: 3;
+  margin-left: 25px;
+}
+.mobile-nav__btn span {
+  width: 100%;
+  height: 2px;
   background-color: #FFF;
-  padding: 20px;
-  z-index: 9999999;
-  /* Vertical Menu Style */
 }
-.mobile-nav.show {
-  right: 0px;
+.mobile-nav__btn span:nth-child(2) {
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
-.mobile-nav .tj-btn-primary {
-  display: block;
+
+.mobile-nav__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  transform: translateX(-100%);
+  transform-origin: left center;
+  transition: transform 500ms ease 500ms, visibility 500ms ease 500ms;
+  visibility: hidden;
+  position: fixed;
 }
-.mobile-nav .close-nav {
-  border: 0;
-  background: transparent;
-  color: #F47102;
-  border-radius: 30px;
-  font-size: 30px;
-  line-height: 30px;
+.mobile-nav__wrapper .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.mobile-nav__wrapper.expanded {
+  opacity: 1;
+  transform: translateX(0%);
+  visibility: visible;
+  transition: transform 500ms ease 0ms, visibility 500ms ease 0ms;
+}
+.mobile-nav__wrapper.expanded .mobile-nav__content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition: opacity 500ms ease 500ms, visibility 500ms ease 500ms, transform 500ms ease 500ms;
+}
+
+.mobile-nav__overlay {
   position: absolute;
-  right: 30px;
-  top: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.3;
+  cursor: url(../img/close.png), auto;
 }
-.mobile-nav .sidebar-nav {
-  margin-top: 50px;
+
+.mobile-nav__content {
+  width: 300px;
+  background-color: #00dadc;
+  z-index: 10;
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: opacity 500ms ease 0ms, visibility 500ms ease 0ms, transform 500ms ease 0ms;
 }
-.mobile-nav .sidebar-nav ul {
+.mobile-nav__content .main-menu__nav {
+  display: block;
+  padding: 0;
+}
+
+.mobile-nav__content .logo-box {
+  margin-bottom: 60px;
+  display: flex;
+}
+
+.mobile-nav__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 22px;
+  color: #FFF;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+}
+.mobile-nav__close:hover {
+  transform: rotate(180deg);
+}
+
+.mobile-nav__content .main-menu__list,
+.mobile-nav__content .main-menu__list ul {
   margin: 0;
   padding: 0;
-  list-style: none;
-  background-color: transparent;
-}
-.mobile-nav .sidebar-nav ul li {
-  display: block;
-}
-.mobile-nav .sidebar-nav .metismenu {
-  display: flex;
-  flex-direction: column;
-}
-.mobile-nav .sidebar-nav .metismenu > li {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.mobile-nav .sidebar-nav .metismenu a {
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-  transition: all 0.3s ease-out;
-  text-decoration: none;
-  color: #000;
-  font-size: 17px;
-  outline-width: 0;
-  text-transform: capitalize;
-  border-bottom: 1px solid #f4f7fd;
-}
-.mobile-nav .sidebar-nav .metismenu ul a {
-  padding: 10px 15px 10px 35px;
-  position: relative;
-}
-.mobile-nav .sidebar-nav .metismenu ul a::before {
-  clear: both;
-  display: block;
-  content: "";
-  height: 1px;
-  width: 0px;
-  z-index: 4;
-  transition: all 0.4s ease-in-out;
-  background: #FFF;
-  position: absolute;
-  left: 15px;
-  top: calc(45% + 2px);
-}
-.mobile-nav .sidebar-nav .metismenu ul a:hover {
-  padding-left: 40px;
-}
-.mobile-nav .sidebar-nav .metismenu ul a:hover::before {
-  width: 10px;
-}
-.mobile-nav .sidebar-nav .metismenu ul ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
-.mobile-nav .sidebar-nav .metismenu ul ul a {
-  padding: 10px 15px 10px 45px;
+
+.mobile-nav__content .main-menu__list > li + li {
+  margin-left: 0;
 }
-.mobile-nav .metismenu .has-arrow {
-  padding: 5px;
-  background: #FFF;
+
+.mobile-nav__content .main-menu__list ul {
+  display: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
-.mobile-nav .sidebar-nav .metismenu a:hover,
-.mobile-nav .sidebar-nav .metismenu a:focus,
-.mobile-nav .sidebar-nav .metismenu a:active {
-  text-decoration: none;
+
+.mobile-nav__content .main-menu__list ul li > a {
+  padding-left: 1em;
+}
+
+.mobile-nav__content .main-menu__list li:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.mobile-nav__content .main-menu__list li > a {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  height: 46px;
+  align-items: center;
+  transition: 500ms;
+  text-transform: capitalize;
   color: #FFF;
-  background: #1085A9;
-}
-.mobile-nav .metismenu .has-arrow::after {
-  position: absolute;
-  content: "";
-  width: 0.5em;
-  height: 0.5em;
-  border-width: 2px 0 0 2px;
-  border-style: solid;
-  border-color: initial;
-  right: 1em;
-  transform: rotate(-45deg) translate(0, -50%);
-  transform-origin: top;
-  top: 27px;
-  font-weight: 700;
-  transition: all 0.3s ease-out;
-}
-.mobile-nav .metismenu .has-arrow.active::after {
-  transform: rotate(-135deg) translate(0, -50%);
-}
-.mobile-nav .action-bar {
-  margin-top: 40px;
-}
-.mobile-nav .action-bar a {
-  width: 100%;
+  font-size: 19px;
 }
 
-.mobile-nav .logo {
-  height: auto !important;
-  display: block !important;
+.mobile-nav__content .main-menu__list li a.expanded {
+  color: #000;
 }
 
-#hamburger {
-  font-size: 30px;
-  line-height: 1;
-  text-align: right;
-  font-weight: 700;
+.mobile-nav__social {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
 }
-#hamburger i {
-  cursor: pointer;
+.mobile-nav__social a {
+  font-size: 18px;
+  color: #FFF;
+  transition: 500ms;
+}
+.mobile-nav__social a + a {
+  margin-left: 20px;
+}
+.mobile-nav__social a:hover {
+  color: #000;
+}
+
+.mobile-nav__contact {
+  margin-bottom: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mobile-nav__contact li {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.mobile-nav__contact li + li {
+  margin-top: 15px;
+}
+.mobile-nav__contact li a {
+  color: inherit;
+  transition: 500ms;
+}
+.mobile-nav__contact li a:hover {
+  color: #000;
+}
+.mobile-nav__contact li > i {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  margin-right: 10px;
+  color: #FFF;
+}
+
+.mobile-nav__container .main-menu__logo,
+.mobile-nav__container .main-menu__right {
+  display: none;
 }
 
 /* ------------------------------------------------------------------
@@ -803,25 +787,23 @@ button {
 }
 .main-menu ul > li > a {
   display: block;
-  padding: 25px 0px;
+  padding: 19px 0px;
   overflow: hidden;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Nexa", sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
   text-align: center;
   text-transform: capitalize;
-  color: #000;
-  text-shadow: 0 0 0.1px currentColor;
+  color: #FFF;
+  font-size: 19px;
+  line-height: 32px;
 }
 .main-menu ul > li:hover > a {
-  color: #FE330A;
+  color: #25234d;
 }
 .main-menu ul > li:hover > ul {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+  transform: translateY(3px);
 }
 .main-menu ul > li > ul {
   position: absolute;
@@ -865,7 +847,7 @@ button {
 .main-menu ul > li > ul li.has-dropdown > a::after {
   display: block;
   content: "\f105";
-  font-family: "Font Awesome 6 Pro";
+  font-family: "'Font Awesome 5 Free";
   font-weight: 700;
   position: absolute;
   right: 15px;
@@ -965,7 +947,7 @@ button {
   padding: 35px 0px;
 }
 .main-footer__bottom__text {
-  font-family: "Inter", sans-serif;
+  font-family: "Nexa", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -983,7 +965,7 @@ button {
   margin-bottom: 30px;
 }
 .main-footer__title {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Nexa", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 21px;
@@ -993,7 +975,7 @@ button {
   margin-bottom: 30px;
 }
 .main-footer__text {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Nexa", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1002,7 +984,7 @@ button {
   margin-bottom: 24px;
 }
 .main-footer__website {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Nexa", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 167%;
@@ -1020,7 +1002,7 @@ button {
   color: #F47102;
 }
 .main-footer__link__item {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Nexa", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1051,7 +1033,7 @@ button {
   background: transparent;
   outline: 0;
   border: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Nexa", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
