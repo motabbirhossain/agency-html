@@ -68,7 +68,7 @@
 		transform: translateY(0px);
 	}
 	50%{
-		transform: translateY(6px);
+		transform: translateY(10px);
 	}
 	100%{
 		transform: translateY(0px);
@@ -179,12 +179,12 @@
 
 @keyframes scaleOne {
 	0% {
-		transform: scale(1.0);
+		transform: scale(0.7);
 	    }
 	    60% {
-		    transform: scale(1.2);
+		    transform: scale(1.0);
 	    }
 	    100% {
-		    transform: scale(1.0);
+		transform: scale(0.7);
 	    }
 }

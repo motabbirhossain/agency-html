@@ -272,6 +272,14 @@ button {
   --bs-gutter-x:0;
 }
 
+.page-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 300px;
+  overflow: hidden;
+}
+
 /* ----------------------------------
   02. ANIMATION STYLING
  ------------------------------------ */
@@ -338,7 +346,7 @@ button {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(6px);
+    transform: translateY(10px);
   }
   100% {
     transform: translateY(0px);
@@ -441,13 +449,13 @@ button {
 }
 @keyframes scaleOne {
   0% {
-    transform: scale(1);
+    transform: scale(0.7);
   }
   60% {
-    transform: scale(1.2);
+    transform: scale(1);
   }
   100% {
-    transform: scale(1);
+    transform: scale(0.7);
   }
 }
 /*------------------------
@@ -916,6 +924,73 @@ button {
 }
 .gen-hero-one__btn:hover {
   background-color: #ffc727;
+}
+
+/* ----------------------------------
+	25. CTA css
+ ------------------------------------ */
+.gen-about-one {
+  position: relative;
+  z-index: 1;
+  padding: 120px 0px 90px;
+}
+.gen-about-one__left {
+  margin-left: -125px;
+  margin-right: 125px;
+  position: relative;
+}
+.gen-about-one__thumb {
+  position: relative;
+  z-index: 1;
+}
+.gen-about-one__shape {
+  position: absolute;
+  top: 5%;
+  left: 60%;
+  animation: top-bottom 4s ease-in-out infinite;
+}
+.gen-about-one__shape-two {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  z-index: -1;
+  animation: scaleOne 3s ease-in-out infinite;
+}
+.gen-about-one__subtitle {
+  font-size: 30px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #6422db;
+  font-weight: 500;
+  margin-bottom: 29px;
+  padding-bottom: 0;
+}
+.gen-about-one__title {
+  font-size: 70px;
+  letter-spacing: -3px;
+  line-height: 66px;
+  color: #25234d;
+  font-weight: bold;
+  margin-bottom: 28px;
+  padding-bottom: 0;
+}
+.gen-about-one__text {
+  opacity: 0.812;
+  font-size: 20px;
+  line-height: 36px;
+  color: #25234d;
+  max-width: 540px;
+  width: 100%;
+  font-weight: 500;
+  margin-bottom: 43px;
+}
+.gen-about-one__btn {
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #171718;
+  font-weight: bold;
+  padding: 19px 79px;
 }
 
 /* ----------------------------------
