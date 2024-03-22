@@ -59,7 +59,7 @@ html {
     typography css start 
 ---------------------------------*/
 body {
-  font-family: "Nexa", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 17px;
   font-weight: 600;
   color: #191919;
@@ -76,7 +76,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nexa", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000;
   font-weight: 700;
   line-height: 1.2;
@@ -462,11 +462,11 @@ button {
   border: none;
   outline: none !important;
   color: #171718;
-  font-family: "Nexa", sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 12px 24px;
   transition: 700ms;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 17px;
   line-height: 26px;
   text-transform: uppercase;
@@ -509,7 +509,7 @@ button {
   }
 }
 .sec-title__title {
-  font-family: "Nexa", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -789,7 +789,7 @@ button {
   display: block;
   padding: 19px 0px;
   overflow: hidden;
-  font-family: "Nexa", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   text-align: center;
   text-transform: capitalize;
@@ -876,6 +876,49 @@ button {
 }
 
 /* ----------------------------------
+	29. Hero css
+ ------------------------------------ */
+.gen-hero-one {
+  position: relative;
+  z-index: 1;
+}
+.gen-hero-one__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: cover;
+  z-index: -1;
+}
+.gen-hero-one__title {
+  font-size: 88px;
+  letter-spacing: -4px;
+  line-height: 79px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+.gen-hero-one__text {
+  opacity: 0.8;
+  font-size: 20px;
+  line-height: 36px;
+  color: #fff;
+  max-width: 526px;
+  margin-left: 0;
+  font-weight: 500;
+}
+.gen-hero-one__btn {
+  background-color: #00dadc;
+  font-weight: 500;
+}
+.gen-hero-one__btn:hover {
+  background-color: #ffc727;
+}
+
+/* ----------------------------------
 	14. services css
  ------------------------------------ */
 /* ----------------------------------
@@ -915,173 +958,74 @@ button {
 	29. footer css
  ------------------------------------ */
 .main-footer {
+  padding: 210px 0px 65px;
   position: relative;
   z-index: 1;
-  background: #EFEAE3;
-  border-radius: 100px 100px 0px 0px;
+}
+.main-footer__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 .main-footer__top {
-  padding-top: 130px;
-  padding-bottom: 100px;
+  margin-bottom: 80px;
 }
-.main-footer__top__carousel {
-  width: 100%;
+.main-footer__inner {
   display: flex;
   align-items: center;
-  gap: 35px;
-  animation: textScrolling 25s linear infinite;
-  animation-direction: reverse;
-  will-change: transform;
-  position: relative;
-  white-space: nowrap;
+  justify-content: space-between;
 }
-.main-footer__top__carousel:hover {
-  animation-play-state: paused;
-}
-.main-footer__middle__inner {
-  padding: 100px 0px;
-  border-top: 1px solid #DBD6CF;
-  border-bottom: 1px solid #DBD6CF;
-}
-.main-footer__bottom {
-  padding: 35px 0px;
-}
-.main-footer__bottom__text {
-  font-family: "Nexa", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 167%;
-  text-align: center;
-  color: #191919;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-.main-footer__logo {
+.main-footer__link {
   display: flex;
-  justify-content: start;
-  align-items: start;
-  width: 100%;
-  margin-bottom: 30px;
-}
-.main-footer__title {
-  font-family: "Nexa", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 21px;
-  line-height: 143%;
-  color: #000;
-  text-shadow: 0 0 0.1px currentColor;
-  margin-bottom: 30px;
-}
-.main-footer__text {
-  font-family: "Nexa", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 167%;
-  color: #191919;
-  margin-bottom: 24px;
-}
-.main-footer__website {
-  font-family: "Nexa", sans-serif;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 167%;
-  color: #191919;
-  font-weight: 600;
-}
-.main-footer__website strong {
-  color: #000;
-}
-.main-footer__website a {
-  font-weight: 400;
-  color: inherit;
-}
-.main-footer__website a:hover {
-  color: #F47102;
-}
-.main-footer__link__item {
-  font-family: "Nexa", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 167%;
-  color: #191919;
+  align-items: center;
+  margin-right: auto;
 }
 .main-footer__link__item a {
-  color: inherit;
+  font-size: 19px;
+  line-height: 32px;
+  margin-bottom: 0;
+  color: #FFF;
+  text-transform: capitalize;
+  transition: all 0.4s ease-in-out;
 }
 .main-footer__link__item a:hover {
-  color: #F47102;
+  color: #000;
 }
 .main-footer__link__item + .main-footer__link__item {
-  margin-top: 10px;
-}
-.main-footer__form {
-  position: relative;
-  max-width: 300px;
-  width: 100%;
-  border: 1px solid #000;
-  border-radius: 50px;
-  display: flex;
-  align-self: center;
-  width: 100%;
-}
-.main-footer__form input {
-  height: 50px;
-  background: transparent;
-  outline: 0;
-  border: 0;
-  font-family: "Nexa", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  text-align: center;
-  letter-spacing: 0.5px;
-  color: #191919;
-  padding-right: 20px;
-}
-.main-footer__form input::-moz-placeholder {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  text-align: center;
-  letter-spacing: 0.5px;
-  color: #191919;
-  padding-right: 20px;
-}
-.main-footer__form input::placeholder {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  text-align: center;
-  letter-spacing: 0.5px;
-  color: #191919;
-  padding-right: 20px;
-}
-.main-footer__form button {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  background: #000;
-  border-radius: 50px;
-  color: #FFF;
-  padding: 8.5px 20px;
-}
-.main-footer__form button:hover {
-  background: #F47102;
-}
-
-.footer-widget--link {
-  margin-left: 60px;
-  margin-right: -30px;
-}
-.footer-widget--link2 {
   margin-left: 70px;
+}
+.main-footer__social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main-footer__social a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 18px;
+  background-color: rgba(83, 211, 255, 0.2);
+  transition: all 0.4s ease-in-out;
+}
+.main-footer__social a:hover {
+  background-color: #00dadc;
+}
+.main-footer__bottom__text {
+  font-size: 17px;
+  line-height: 40px;
+  color: #f7fbff;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
 }
 
 /* ----------------------------------

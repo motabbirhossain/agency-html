@@ -274,3 +274,14 @@ button{
 .gutter-x-0{
     --bs-gutter-x:0;
 }
+
+@mixin svgMask($svg, $repeat: no-repeat, $position: top center, $size: auto) {
+	-webkit-mask: url('data:image/svg+xml;utf8,#{$svg}');
+	mask: url('data:image/svg+xml;utf8,#{$svg}');
+	-webkit-mask-repeat: $repeat;
+	mask-repeat: $repeat;
+	-webkit-mask-position: $position;
+	mask-position: $position;
+	-webkit-mask-size: $size;
+	mask-size: $size;
+}
