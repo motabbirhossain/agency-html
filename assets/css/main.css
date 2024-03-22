@@ -992,10 +992,113 @@ button {
   font-weight: bold;
   padding: 19px 79px;
 }
+.gen-about-one__shape-three {
+  position: absolute;
+  right: -10%;
+  top: 5%;
+  animation: scaleOne 6s ease-in-out infinite;
+}
 
 /* ----------------------------------
 	14. services css
  ------------------------------------ */
+.gen-service-one {
+  position: relative;
+  z-index: 1;
+  padding: 110px 0px 120px;
+}
+.gen-service-one__bg {
+  background-color: #6422db;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.gen-service-one__left {
+  margin-right: -10px;
+}
+.gen-service-one__subtitle {
+  font-size: 30px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #6422db;
+  font-weight: 500;
+  margin-bottom: 29px;
+  padding-bottom: 0;
+}
+.gen-service-one__title {
+  font-size: 70px;
+  letter-spacing: -3px;
+  line-height: 66px;
+  color: #25234d;
+  font-weight: bold;
+  margin-bottom: 28px;
+  padding-bottom: 0;
+}
+.gen-service-one__text {
+  opacity: 0.812;
+  font-size: 20px;
+  line-height: 36px;
+  color: #25234d;
+  max-width: 540px;
+  width: 100%;
+  font-weight: 500;
+  margin-bottom: 43px;
+}
+.gen-service-one__btn {
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #171718;
+  font-weight: bold;
+  padding: 19px 79px;
+}
+.gen-service-one__feature {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.gen-service-one__list {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  margin-top: 160px;
+}
+.gen-service-one__list + .gen-service-one__list {
+  margin-top: 0px;
+}
+.gen-service-one__item {
+  position: relative;
+  padding: 50px 30px 50px;
+  border-radius: 5px;
+  filter: drop-shadow(0px 30px 35px rgba(223, 227, 234, 0.5));
+  background-color: #ffffff;
+}
+.gen-service-one__item__title {
+  opacity: 0.788;
+  font-size: 24px;
+  color: #25234d;
+  font-weight: bold;
+  padding-bottom: 0;
+  margin-bottom: 18px;
+}
+.gen-service-one__item__text {
+  opacity: 0.812;
+  font-size: 18px;
+  line-height: 32px;
+  color: #25234d;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.gen-service-one__icon {
+  margin-bottom: 32px;
+}
+
 /* ----------------------------------
 	15. Chose Us css
  ------------------------------------ */

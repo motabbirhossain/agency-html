@@ -71,4 +71,10 @@
                 font-weight: bold;
                 padding: 19px 79px;
         }
+        &__shape-three{
+                position: absolute;
+                right: -10%;
+                top: 5%;
+                animation: scaleOne 6s ease-in-out infinite;
+        }
  }
