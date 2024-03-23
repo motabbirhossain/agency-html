@@ -12,12 +12,18 @@
 	.main-header__inner{
 		display: flex;
 		align-items: center;
+		@media (max-width:991px) {
+			justify-content: space-between;
+		}
 	}
 	.main-menu{
 		margin-left: 110px;
 		margin-right: auto;
 		@media (max-width:1199px) {
 			margin-left: 90px;
+		}
+		@media (max-width:991px) {
+			display: none;
 		}
 	}
 	&__right{
@@ -37,6 +43,9 @@
 			background: #6426dd;
 			color: $white;
 		}
+		@media (max-width:575px) {
+			display: none;
+		}
 	}
 }
 /* ---------------------------------
@@ -45,13 +54,16 @@
 
 .mobile-nav__btn {
 width: 24px;
-display: flex;
 align-items: center;
 flex-direction: column;
 flex-wrap: wrap;
 cursor: pointer;
 z-index: 3;
 margin-left: 25px;
+display: none;
+@media (max-width:991px) {
+	display: flex;
+}
 
 span {
 	width: 100%;
@@ -252,10 +264,8 @@ li {
 }
 
 .mobile-nav__container {
-
-.main-menu__logo,
-.main-menu__right {
-	display: none;
-}
-
+	.main-menu__logo,
+	.main-menu__right {
+		display: none;
+	}
 }
