@@ -4,6 +4,7 @@
  .gen-hero-one{
         position: relative;
         z-index: 1;
+        padding: 160px 0px;
         &__bg{
                 position: absolute;
                 width: 100%;
@@ -41,5 +42,56 @@
                &:hover{
                 background-color: #ffc727;
                }
+        }
+        &__right{
+                position: relative;
+                z-index: 1;
+                .gen-thumb__shape-one{
+                        position: absolute;
+                        top: 5%;
+                        left: -5%;
+                }
+                .gen-thumb__shape-two{
+                        position: absolute;
+                        bottom: 20%;
+                        left: -10%;
+                        z-index: 1;
+                }
+                .gen-thumb__shape-three{
+                        position: absolute;
+                        top: 5%;
+                        right: 0%;
+                }
+        }
+        &__thumb{
+                -webkit-mask-image: url(../img/Mask.png);
+                mask-image: url(../img/Mask.png);
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;    
+                mask-position: top right;
+                margin-top: 20px;
+                margin-right: -100px;
+                margin-left: -50px;
+                img{
+                      width: 100%;
+                      height: 800px;
+                      object-fit: cover;
+                }
+                position: relative;
+                z-index: 1;
+               
+        }
+       
+
+        &__shape-one{
+                position: absolute;
+                top: 10%;
+                left: 0;
+        }
+
+        &__shape-two{
+                position: absolute;
+                bottom: -30%;
+                left: -20%;
         }
  }

@@ -12,25 +12,28 @@
 		Owl Carousel Init
 	============================*/
 
-    /*==========================
-					Sticky Menu Init
-			============================*/
+  $('.gen-testimonials-one__carousel').owlCarousel({
+    items: 1,
+    dots: false,
+    loop: true,
+    autoplayTimeout: 8000,
+    autoplay: true,
+    nav: true,
+    navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
+    
+})
 
     //Header Responsive
-    $("#hamburger").on("click", function () {
-      $(".mobile-nav").addClass("show");
-      $(".body-overlay").addClass("active");
+    $("#mobile-nav__toggler").on("click", function () {
+      $(".mobile-nav__wrapper").addClass("expanded");
     });
 
-    $(".close-nav").on("click", function () {
-      $(".mobile-nav").removeClass("show");
-      $(".body-overlay").removeClass("active");
-      $("body").removeClass("active");
+    $(".mobile-nav__close").on("click", function () {
+      $(".mobile-nav__wrapper").removeClass("expanded");
     });
 
-    $(".body-overlay").on("click", function () {
-      $(".mobile-nav").removeClass("show");
-      $(".body-overlay").removeClass("active");
+    $(".mobile-nav__overlay").on("click", function () {
+      $(".mobile-nav__wrapper").removeClass("expanded");
     });
    
     /* =============================================
@@ -40,8 +43,8 @@
       var wow = new WOW({
         boxClass: "wow",
         animateClass: "animated",
-        mobile: true,
-        live: true,
+        mobile: true, 
+        live: true
       });
       wow.init();
     }
