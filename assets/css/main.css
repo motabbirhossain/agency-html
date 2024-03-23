@@ -1159,6 +1159,8 @@ button {
   filter: drop-shadow(0px 30px 35px rgba(103, 48, 226, 0.5));
   background-color: #ffffff;
   padding: 70px 80px 136px;
+  position: relative;
+  z-index: 1;
 }
 .gen-testimonials-one__text {
   font-size: 22px;
@@ -1183,6 +1185,12 @@ button {
   color: #ffcc00;
   letter-spacing: 1px;
   font-size: 22px;
+}
+.gen-testimonials-one__quite {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  z-index: -1;
 }
 
 /* ----------------------------------
