@@ -1176,6 +1176,7 @@ About css
   animation: top-bottom 4s ease-in-out infinite;
 }
 .gen-testimonials-one__item {
+  margin-top: 20px;
   max-width: 730px;
   margin-left: auto;
   margin-right: auto;
@@ -1183,7 +1184,7 @@ About css
   overflow: hidden;
   height: auto;
   border-radius: 20px;
-  filter: drop-shadow(0px 30px 35px rgba(103, 48, 226, 0.5));
+  /* filter: drop-shadow(0px 30px 35px rgba(103, 48, 226, 0.5)); */
   background-color: var(--white);
   padding: 70px 80px 136px;
   position: relative;
@@ -1523,6 +1524,13 @@ About css
   background: var(--white);
   max-width: 550px;
   width: 100%;
+}
+
+@media (max-width: 991px) {
+  .gen-contact-one__right {
+   margin-left: auto;
+   margin-right: auto;
+  }
 }
 .gen-contact-one__right::before {
   content: "";
