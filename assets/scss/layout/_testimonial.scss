@@ -5,7 +5,7 @@
  .gen-testimonials-one{
         position: relative;
         z-index: 1;
-        padding: 150px 0px 170px;
+        padding: 150px 0px 270px;
         &__bg{
 		position: absolute;
 		width: 100%;
@@ -17,9 +17,11 @@
                 background-position: bottom right;
 		z-index: -1;
         }
+
         .section-top{
                 margin-bottom: 60px;
         }
+
         .section-subtitle{
                 font-size: 30px;
                 letter-spacing: 6px;
@@ -29,6 +31,7 @@
                 margin-bottom: 10px;
                 padding-bottom: 0;
         }
+
         .section-title{
                 font-size: 70px;
                 letter-spacing: -3px;
@@ -40,11 +43,22 @@
         }
 
         &__inner{
+                position: relative;
+                z-index: 1;
+                &__shape{
+                        top: 0%;
+                        left: 20%;
+                        position: absolute;
+                        z-index: -1;
+                        animation: top-bottom 4s ease-in-out infinite;
+                }
 
         }
+
         &__carousel{
 
         }
+
         &__item{
                 max-width: 730px;
                 margin-left: auto;
@@ -59,6 +73,7 @@
                 position: relative;
                 z-index: 1;
         }
+
         &__text{
                 font-size: 22px;
                 line-height: 50px;
@@ -67,6 +82,7 @@
                 text-align: center;
                 margin-bottom: 10px;
         }
+        
         .gen-author{
                 text-align: center;
                 .gen-author__name{
@@ -83,10 +99,155 @@
                         font-size: 22px;
                 }
         }
+
         &__quite{
                 position: absolute;
-                top: 20%;
+                top: 5%;
                 left: 35%;
                 z-index: -1;
+        }
+
+        &__carousel{
+                max-width: 730px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                position: relative;
+                &::after{
+                        content: "";
+                        margin-left: 30px;
+                        margin-right: 30px;
+                        position: absolute;
+                        bottom: -30px;
+                        width: 90%;
+                        height: 100px;
+                        border-radius: 20px;
+                        filter: drop-shadow(0px 30px 35px rgba(103,48,226,0.5));
+                        background-color: #9a76ec;
+                }
+                &::before{
+                        left: 20px;
+                        content: "";
+                        margin-left: 50px;
+                        margin-right: 50px;
+                        position: absolute;
+                        bottom: -60px;
+                        width: 80%;
+                        height: 100px;
+                        border-radius: 20px;
+                        filter: drop-shadow(0px 30px 35px rgba(103,48,226,0.5));
+                        background-color: #9a76ec;
+                }
+        }
+        &__maps{
+                position: absolute;
+                bottom: 10%;
+                left: 10%;
+        }
+        .gen-testimonilas{
+                position: absolute;
+                z-index: -1;
+        }
+        &__image-one{
+                width: 119px;
+                height: 119px;
+                border-radius: 50%;
+                overflow: hidden;
+                top: calc(100% - 70%);
+                right: 0;
+                animation: scaleOne 4s ease-in-out infinite;
+                img{
+                        object-fit: cover;
+                        width: 100%;
+                }
+        }
+        &__image-two{
+                width: 97px;
+                height: 97px;
+                border-radius: 50%;
+                overflow: hidden;
+                top: -20%;
+                right: 5%;
+                animation: scaleOne 3s ease-in-out infinite;
+                img{
+                        object-fit: cover;
+                        width: 100%;
+                }
+        }
+
+        &__image-three{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                bottom: 0;
+                left: 10%;
+                animation: scaleOne 4s  1s ease-in-out infinite;
+                img{
+                        object-fit: cover;
+                        width: 100%;
+                }
+        }
+
+        &__image-fore{
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                overflow: hidden;
+                animation: scaleOne 4s  0.5s ease-in-out infinite;
+                img{
+                        width: 70px;
+                        height: 70px;;
+                }
+        }
+
+        &__image-fore{
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                overflow: hidden;
+                top: 40%;
+                left: -10%;
+                animation: scaleOne 5s  0.7s ease-in-out infinite;
+                img{
+                        width: 70px;
+                        height: 70px;;
+                }
+        }
+
+        &__image-five{
+                width: 105px;
+                height: 105px;
+                border-radius: 50%;
+                overflow: hidden;
+                top: 0%;
+                left: 10%;
+                animation: scaleOne 4s  0.8s ease-in-out infinite;
+                img{
+                       width: 100%;
+                       object-fit: cover;
+                }
+        }
+
+        &__image-six{
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                overflow: hidden;
+                bottom: 0;
+                right: 10%;
+                animation: scaleOne 5s  0.7s ease-in-out infinite;
+                img{
+                        width: 70px;
+                        height: 70px;
+                       object-fit: cover;
+                }
+        }
+
+        &__shape{
+                position: absolute;
+                top: -5%;
+                left: -5%;
+                animation: left-to-right 4s ease-in-out infinite;
         }
  }
