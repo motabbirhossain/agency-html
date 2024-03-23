@@ -83,16 +83,32 @@
 			border: 1px solid rgba(#6a697f,  0.302) ;
 			padding-left: 40px;
 			padding-right: 20px;
+			&:focus+label {
+				transform: translateY(-24px);
+				visibility: visible;
+				opacity: 1;
+			}
 		}
 		input[ type="text"],input[ type="email"],textarea{
+			font-size: 20px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color: #6422db;
+			font-weight: 600;
 			&::placeholder{
+				position: relative;
+				z-index: 999;
 				opacity: 0.702;
 				font-size: 19px;
 				color: #6e6e6e;
 				text-transform: capitalize;
 				font-family: "Poppins", sans-serif;
+				text-transform: capitalize;
+				letter-spacing: 0;
+				font-weight: 500;
 			}
 		}
+		
 		textarea{
 			height: 200px !important;
 			padding-top: 25px;
@@ -111,6 +127,8 @@
 			padding-right: 5px;
 			background: #ffffff;
 			margin-top: -13px;
+			transform: translateY(40px);
+			z-index: -1;
 			opacity: 0;
 			visibility: hidden;
 		}
