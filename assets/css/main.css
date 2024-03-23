@@ -1572,9 +1572,19 @@ button {
 	contact css
  ------------------------------------ */
 .gen-contact-one {
-  padding: 120px 0px;
+  padding: 80px 0px 120px;
   position: relative;
   z-index: 1;
+}
+@media (max-width: 991px) {
+  .gen-contact-one {
+    padding: 80px 0px 90px;
+  }
+}
+@media (max-width: 767px) {
+  .gen-contact-one {
+    padding: 80px 0px 80px;
+  }
 }
 .gen-contact-one__subtitle {
   font-size: 30px;
@@ -1585,6 +1595,14 @@ button {
   font-weight: 500;
   margin-bottom: 27px;
 }
+@media (max-width: 575px) {
+  .gen-contact-one__subtitle {
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+}
 .gen-contact-one__title {
   font-size: 70px;
   letter-spacing: -3px;
@@ -1593,6 +1611,26 @@ button {
   font-weight: bold;
   padding-bottom: 0;
   margin-bottom: 35px;
+}
+@media (max-width: 991px) {
+  .gen-contact-one__title br {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .gen-contact-one__title {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+  .gen-contact-one__title br {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .gen-contact-one__title {
+    font-size: 50px;
+    line-height: 1.2;
+  }
 }
 .gen-contact-one__text {
   max-width: 530px;
@@ -1636,6 +1674,11 @@ button {
   padding: 80px 40px 80px;
   position: relative;
   z-index: 1;
+}
+@media (max-width: 767px) {
+  .gen-contact-one__form {
+    padding: 40px 30px 40px;
+  }
 }
 .gen-contact-one__form .form-control {
   width: 100%;
@@ -1717,6 +1760,11 @@ button {
   right: 15%;
   z-index: 1;
   animation: scaleOne 3s ease-in-out infinite;
+}
+@media (max-width: 991px) {
+  .gen-contact-one__shape {
+    display: none;
+  }
 }
 
 /* ----------------------------------
