@@ -217,6 +217,14 @@ button {
   width: 100%;
 }
 
+.page-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 300px;
+  overflow: hidden;
+}
+
 .gutter-x-0 {
   --bs-gutter-x:0;
 }
