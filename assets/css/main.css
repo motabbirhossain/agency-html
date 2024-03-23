@@ -1,44 +1,38 @@
 /*-----------------------------------------------------------------------------------
 
     Theme Name: 
-    Author: Motabbor Hossain
+    Author: 
     Description: 
     Version: 1.0.0
 
 -----------------------------------------------------------------------------------*/
 /************ TABLE OF CONTENTS ***************
-    01. THEME DEFAULT CSS
-    02. animation css
-    03. Template Helps Classes - Styles
-    05. preloader css
-    06. buttons css
-    07. background CSS
-    08. carousel css
-    09. section-title css
-
-    10. header css
-    11. meanmenu css
-    12. Hero css
-    13. about css
-    14. services css
-    15. Chose Us css
-    16. feature css
-    17. projects css
-    18. 404 css
-    29. testimonial css
-    20. team css
-    21. blog css
-    22. brand css
-    23. process css
-    24. fact css
-    25. CTA css
-    26. portfolio css
-    27. faq css
-    28. contact css
-    29. footer css
+   ==> animation css
+    ==> buttons css
+    ==> header css
+    ==> meanmenu css
+    ==> Hero css
+    ==> about css
+    ==> services css
+    ==> testimonial css
+   ==> contact css
+    ==> footer css
 **********************************************/
+:root {
+  --body-font:  "Poppins", sans-serif;
+  --special-font: "Font Awesome 5 Free";
+  --white:#fff;
+  --black:#000;
+  --text:#191919;
+  --black2:#171718;
+  --gray:#00dadc;
+  --gray2:#ffc727;
+  --base:#6426dd;
+  --base2:#25234d;
+}
+
 /*----------------------------------------
-  01. THEME DEFAULT CSS START
+ THEME DEFAULT CSS START
 ----------------------------------------*/
 * {
   margin: 0;
@@ -59,10 +53,10 @@ html {
     typography css start 
 ---------------------------------*/
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--body-font);
   font-size: 17px;
   font-weight: 600;
-  color: #191919;
+  color: var(--text);
   line-height: 1.5;
 }
 
@@ -76,8 +70,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
-  color: #000;
+  font-family: var(--body-font);
   font-weight: 700;
   line-height: 1.2;
 }
@@ -161,7 +154,7 @@ input::-webkit-focus-inner {
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0px 1000px #FFF inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px var(--white) inset !important;
 }
 
 ::-moz-placeholder {
@@ -219,50 +212,6 @@ button {
   opacity: 1;
 }
 
-#scrollUp {
-  background-color: #1085A9;
-  border-radius: 50%;
-  bottom: 20px;
-  color: #FFF;
-  font-size: 22px;
-  height: 40px;
-  line-height: 40px;
-  right: 20px;
-  text-align: center;
-  width: 40px;
-  box-shadow: 0px 5px 15px 0px rgba(1, 29, 80, 0.1);
-  font-weight: 500;
-  transition: all 0.4s ease-in-out;
-}
-#scrollUp:hover {
-  background-color: #F47102;
-}
-
-@keyframes sticky {
-  0% {
-    opacity: 0;
-    margin-top: -120px;
-  }
-  50% {
-    opacity: 0;
-    margin-top: -60px;
-  }
-  100% {
-    opacity: 1;
-    margin-top: 0;
-  }
-}
-.scroll-up-btn a {
-  display: inline-block;
-  padding: 16px 20px;
-  border-radius: 10px;
-  line-height: 1;
-  background-color: #1085A9;
-}
-.scroll-up-btn a:hover {
-  color: #FFF;
-}
-
 .container {
   max-width: 1470px;
   width: 100%;
@@ -276,16 +225,8 @@ button {
   --bs-gutter-y: 30px;
 }
 
-.page-wrapper {
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-  min-width: 300px;
-  overflow: hidden;
-}
-
 /* ----------------------------------
-  02. ANIMATION STYLING
+  ANIMATION STYLING
  ------------------------------------ */
 @keyframes left-to-right {
   0% {
@@ -320,19 +261,16 @@ button {
     transform: scale(0.7);
   }
 }
-/*------------------------
- 05. preloader css
-------------------------*/
 /* ---------------------------------------
-  06. buttons css
+   buttons css
  ----------------------------------------- */
 .agency-btn {
   display: inline-block;
   vertical-align: middle;
   border: none;
   outline: none !important;
-  color: #171718;
-  font-family: "Poppins", sans-serif;
+  color: var(--black2);
+  font-family: var(--body-font);
   padding: 12px 24px;
   transition: 700ms;
   font-style: normal;
@@ -349,56 +287,15 @@ button {
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 34px;
-  background-color: #ffc727;
+  background-color: var(--gray2);
   transition: all 0.4s ease-in-out;
 }
 .agency-btn:hover {
-  background-color: #00dadc;
-}
-
-/*---------------------------------------
-     07. background CSS
------------------------------------------*/
-/* ----------------------------------
-	08. carousel css
- ------------------------------------ */
-/* ----------------------------------
-	09. section-title css
- ------------------------------------ */
-.sec-title {
-  padding-bottom: 80px;
-}
-@media (max-width: 767px) {
-  .sec-title {
-    padding-bottom: 50px;
-  }
-}
-@media (max-width: 575px) {
-  .sec-title {
-    padding-bottom: 40px;
-  }
-}
-.sec-title__title {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 80px;
-  line-height: 100%;
-  text-align: center;
-  letter-spacing: -2px;
-  color: #000;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  background-color: var(--gray);
 }
 
 /* ----------------------------------
-	HERO TITLE STYLEING
- ------------------------------------ */
-/* ----------------------------------
-	All SECTION TITLE STYLEING
- ------------------------------------ */
-/* ----------------------------------
-	10. header css
+	 header css
  ------------------------------------ */
 .main-header {
   padding-top: 20px;
@@ -435,17 +332,17 @@ button {
 }
 .main-header__btn {
   border-radius: 30px;
-  background-color: #FFF;
+  background-color: var(--white);
   padding: 17px 42px;
   font-size: 17px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #6426dd;
+  color: var(--base);
   font-weight: bold;
 }
 .main-header__btn:hover {
-  background: #6426dd;
-  color: #FFF;
+  background: var(--base);
+  color: var(--white);
 }
 @media (max-width: 575px) {
   .main-header__btn {
@@ -474,7 +371,7 @@ button {
 .mobile-nav__btn span {
   width: 100%;
   height: 2px;
-  background-color: #FFF;
+  background-color: var(--white);
 }
 .mobile-nav__btn span:nth-child(2) {
   margin-top: 4px;
@@ -518,14 +415,14 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #000;
+  background-color: var(--black);
   opacity: 0.3;
   cursor: url(../img/close.png), auto;
 }
 
 .mobile-nav__content {
   width: 300px;
-  background-color: #00dadc;
+  background-color:var(--gray);
   z-index: 10;
   position: relative;
   height: 100%;
@@ -554,7 +451,7 @@ button {
   top: 20px;
   right: 20px;
   font-size: 22px;
-  color: #FFF;
+  color: var(--white);
   cursor: pointer;
   transition: all 0.7s ease-in-out;
 }
@@ -596,12 +493,12 @@ button {
   align-items: center;
   transition: 500ms;
   text-transform: capitalize;
-  color: #FFF;
+  color: var(--white);
   font-size: 19px;
 }
 
 .mobile-nav__content .main-menu__list li a.expanded {
-  color: #000;
+  color: var(--black);
 }
 
 .mobile-nav__social {
@@ -611,14 +508,14 @@ button {
 }
 .mobile-nav__social a {
   font-size: 18px;
-  color: #FFF;
+  color: var(--white);
   transition: 500ms;
 }
 .mobile-nav__social a + a {
   margin-left: 20px;
 }
 .mobile-nav__social a:hover {
-  color: #000;
+  color: var(--black);
 }
 
 .mobile-nav__contact {
@@ -627,7 +524,7 @@ button {
   margin-bottom: 20px;
 }
 .mobile-nav__contact li {
-  color: #FFF;
+  color: var(--white);
   font-size: 18px;
   font-weight: 600;
   position: relative;
@@ -642,20 +539,20 @@ button {
   transition: 500ms;
 }
 .mobile-nav__contact li a:hover {
-  color: #000;
+  color: var(--black);
 }
 .mobile-nav__contact li > i {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background-color: #000;
+  background-color: var(--black);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 16px;
   margin-right: 10px;
-  color: #FFF;
+  color: var(--white);
 }
 
 .mobile-nav__container .main-menu__logo,
@@ -664,7 +561,7 @@ button {
 }
 
 /* ------------------------------------------------------------------
-	11. meanmenu css
+ meanmenu css
 -------------------------------------------------------------------- */
 .main-menu ul {
   line-height: 1;
@@ -680,16 +577,16 @@ button {
   display: block;
   padding: 19px 0px;
   overflow: hidden;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--body-font);
   font-style: normal;
   text-align: center;
   text-transform: capitalize;
-  color: #FFF;
+  color: var(--white);
   font-size: 19px;
   line-height: 32px;
 }
 .main-menu ul > li:hover > a {
-  color: #25234d;
+  color: var(--base2);
 }
 .main-menu ul > li:hover > ul {
   opacity: 1;
@@ -707,7 +604,7 @@ button {
 }
 
 /* ----------------------------------
-	29. Hero css
+. Hero css
  ------------------------------------ */
 .gen-hero-one {
   position: relative;
@@ -740,7 +637,7 @@ button {
   font-size: 88px;
   letter-spacing: -4px;
   line-height: 79px;
-  color: #fff;
+  color: var(--white);
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -760,19 +657,19 @@ button {
   opacity: 0.8;
   font-size: 20px;
   line-height: 36px;
-  color: #fff;
+  color: var(--white);
   max-width: 526px;
   margin-left: 0;
   font-weight: 500;
   margin-bottom: 35px;
 }
 .gen-hero-one__btn {
-  background-color: #00dadc;
+  background-color: var(--gray);
   font-weight: 500;
   padding: 19px 78px;
 }
 .gen-hero-one__btn:hover {
-  background-color: #ffc727;
+  background-color: var(--gray2);
 }
 .gen-hero-one__right {
   position: relative;
@@ -872,7 +769,7 @@ button {
 }
 
 /* ----------------------------------
-	25. CTA css
+About css
  ------------------------------------ */
 .gen-about-one {
   position: relative;
@@ -959,7 +856,7 @@ button {
   font-size: 70px;
   letter-spacing: -3px;
   line-height: 66px;
-  color: #25234d;
+  color: var(--base2);
   font-weight: bold;
   margin-bottom: 28px;
   padding-bottom: 0;
@@ -980,7 +877,7 @@ button {
   opacity: 0.812;
   font-size: 20px;
   line-height: 36px;
-  color: #25234d;
+  color: var(--base2);
   max-width: 540px;
   width: 100%;
   font-weight: 500;
@@ -990,7 +887,7 @@ button {
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
-  color: #171718;
+  color: var(--black2);
   font-weight: bold;
   padding: 19px 79px;
 }
@@ -1007,7 +904,7 @@ button {
 }
 
 /* ----------------------------------
-	14. services css
+	 services css
  ------------------------------------ */
 .gen-service-one {
   position: relative;
@@ -1069,7 +966,7 @@ button {
   font-size: 70px;
   letter-spacing: -3px;
   line-height: 66px;
-  color: #25234d;
+  color: var(--base2);
   font-weight: bold;
   margin-bottom: 28px;
   padding-bottom: 0;
@@ -1098,7 +995,7 @@ button {
   opacity: 0.812;
   font-size: 20px;
   line-height: 36px;
-  color: #25234d;
+  color: var(--base2);
   max-width: 540px;
   width: 100%;
   font-weight: 500;
@@ -1108,7 +1005,7 @@ button {
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
-  color: #171718;
+  color:var(--black2);
   font-weight: bold;
   padding: 19px 79px;
 }
@@ -1154,12 +1051,12 @@ button {
   padding: 50px 30px 50px;
   border-radius: 5px;
   filter: drop-shadow(0px 30px 35px rgba(223, 227, 234, 0.5));
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 .gen-service-one__item__title {
   opacity: 0.788;
   font-size: 24px;
-  color: #25234d;
+  color: var(--base2);
   font-weight: bold;
   padding-bottom: 0;
   margin-bottom: 18px;
@@ -1168,7 +1065,7 @@ button {
   opacity: 0.812;
   font-size: 18px;
   line-height: 32px;
-  color: #25234d;
+  color: var(--base2);
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -1176,15 +1073,6 @@ button {
   margin-bottom: 32px;
 }
 
-/* ----------------------------------
-	15. Chose Us css
- ------------------------------------ */
-/* ----------------------------------
-	17. projects css
- ------------------------------------ */
-/* ----------------------------------
-	18. 404 css
------------------------------------- */
 /* ----------------------------------
 	Testimonials css
  ------------------------------------ */
@@ -1231,7 +1119,7 @@ button {
   font-size: 30px;
   letter-spacing: 6px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white);
   font-weight: 500;
   margin-bottom: 10px;
   padding-bottom: 0;
@@ -1248,7 +1136,7 @@ button {
   font-size: 70px;
   letter-spacing: -3px;
   line-height: 66px;
-  color: #ffffff;
+  color: var(--white);
   font-weight: bold;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1288,7 +1176,7 @@ button {
   height: auto;
   border-radius: 20px;
   filter: drop-shadow(0px 30px 35px rgba(103, 48, 226, 0.5));
-  background-color: #ffffff;
+  background-color: var(--white);
   padding: 70px 80px 136px;
   position: relative;
   z-index: 1;
@@ -1408,9 +1296,9 @@ button {
   transition: all 0.2s ease-in-out;
 }
 .gen-testimonials-one__carousel .owl-nav .owl-prev:hover, .gen-testimonials-one__carousel .owl-nav .owl-next:hover {
-  color: #fff;
-  background-color: #00dadc;
-  border: 2px solid #00dadc;
+  color: var(--white);
+  background-color: var(--gray);
+  border: 2px solid var(--gray);
 }
 .gen-testimonials-one__maps {
   position: absolute;
@@ -1548,27 +1436,6 @@ button {
 }
 
 /* ----------------------------------
-	20. team css
- ------------------------------------ */
-/* ----------------------------------
-	21. blog css
- ------------------------------------ */
-/* ----------------------------------
-	22. brand css
- ------------------------------------ */
-/* ----------------------------------
-	23. process css
- ------------------------------------ */
-/* ----------------------------------
-	24. fact css
- ------------------------------------ */
-/* ----------------------------------
-	25. CTA css
- ------------------------------------ */
-/* ----------------------------------
-	26. portfolio css
- ------------------------------------ */
-/* ----------------------------------
 	contact css
  ------------------------------------ */
 .gen-contact-one {
@@ -1607,7 +1474,7 @@ button {
   font-size: 70px;
   letter-spacing: -3px;
   line-height: 66px;
-  color: #25234d;
+  color: var(--base2);
   font-weight: bold;
   padding-bottom: 0;
   margin-bottom: 35px;
@@ -1638,14 +1505,14 @@ button {
   opacity: 0.812;
   font-size: 20px;
   line-height: 36px;
-  color: #25234d;
+  color: var(--base2);
   margin-bottom: 0;
   padding-bottom: 0;
 }
 .gen-contact-one__right {
   position: relative;
   z-index: 1;
-  background: #fff;
+  background: var(--white);
   max-width: 550px;
   width: 100%;
 }
@@ -1660,7 +1527,7 @@ button {
   height: 100px;
   border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  background: #fff;
+  background: var(--white);
   z-index: -1;
 }
 .gen-contact-one__form {
@@ -1669,7 +1536,7 @@ button {
   margin-left: auto;
   margin-right: 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  background: #fff;
+  background: var(--white);
   border-radius: 20px;
   padding: 80px 40px 80px;
   position: relative;
@@ -1708,7 +1575,7 @@ button {
   font-size: 19px;
   color: #6e6e6e;
   text-transform: capitalize;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--body-font);
   text-transform: capitalize;
   letter-spacing: 0;
   font-weight: 500;
@@ -1720,7 +1587,7 @@ button {
   font-size: 19px;
   color: #6e6e6e;
   text-transform: capitalize;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--body-font);
   text-transform: capitalize;
   letter-spacing: 0;
   font-weight: 500;
@@ -1740,7 +1607,7 @@ button {
   margin-left: 40px;
   padding-left: 5px;
   padding-right: 5px;
-  background: #ffffff;
+  background: var(--white);
   margin-top: -13px;
   transform: translateY(40px);
   z-index: -1;
@@ -1768,7 +1635,7 @@ button {
 }
 
 /* ----------------------------------
-	29. footer css
+ footer css
  ------------------------------------ */
 .main-footer {
   padding: 210px 0px 65px;
@@ -1837,12 +1704,12 @@ button {
   font-size: 19px;
   line-height: 32px;
   margin-bottom: 0;
-  color: #FFF;
+  color: var(--white);
   text-transform: capitalize;
   transition: all 0.4s ease-in-out;
 }
 .main-footer__link__item a:hover {
-  color: #000;
+  color: var(--black);
 }
 .main-footer__link__item + .main-footer__link__item {
   margin-left: 70px;
@@ -1872,7 +1739,7 @@ button {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  color: #FFF;
+  color: var(--white);
   font-size: 18px;
   background-color: rgba(83, 211, 255, 0.2);
   transition: all 0.4s ease-in-out;
@@ -1890,7 +1757,3 @@ button {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-
-/* ----------------------------------
-	footer top Styles
- ------------------------------------ *//*# sourceMappingURL=main.css.map */
