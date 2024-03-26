@@ -213,7 +213,7 @@ button {
 }
 
 .container {
-  max-width: 1470px;
+  max-width: 1400px;
   width: 100%;
 }
 
@@ -588,6 +588,7 @@ button {
   font-family: var(--body-font);
   font-style: normal;
   text-align: center;
+  font-weight: normal;
   text-transform: capitalize;
   color: var(--white);
   font-size: 19px;
@@ -668,12 +669,11 @@ button {
   color: var(--white);
   max-width: 526px;
   margin-left: 0;
-  font-weight: 500;
+  font-weight: normal;
   margin-bottom: 35px;
 }
 .gen-hero-one__btn {
   background-color: var(--gray);
-  font-weight: 500;
   padding: 19px 78px;
 }
 .gen-hero-one__btn:hover {
@@ -725,7 +725,7 @@ button {
   -webkit-mask-position: top right;
           mask-position: top right;
   margin-top: 20px;
-  margin-right: -100px;
+  margin-right: -110px;
   margin-left: -50px;
   position: relative;
   z-index: 1;
@@ -846,9 +846,10 @@ About css
 .gen-about-one__subtitle {
   font-size: 30px;
   letter-spacing: 6px;
+  line-height: normal;
   text-transform: uppercase;
   color: #6422db;
-  font-weight: 500;
+  font-weight: normal;
   margin-bottom: 29px;
   padding-bottom: 0;
 }
@@ -888,8 +889,8 @@ About css
   color: var(--base2);
   max-width: 540px;
   width: 100%;
-  font-weight: 500;
-  margin-bottom: 43px;
+  font-weight: normal;
+  margin-bottom: 37px;
 }
 .gen-about-one__btn {
   font-size: 18px;
@@ -958,8 +959,8 @@ About css
   letter-spacing: 6px;
   text-transform: uppercase;
   color: #6422db;
-  font-weight: 500;
-  margin-bottom: 29px;
+  font-weight: normal;
+  margin-bottom: 25px;
   padding-bottom: 0;
 }
 @media (max-width: 575px) {
@@ -1006,8 +1007,8 @@ About css
   color: var(--base2);
   max-width: 540px;
   width: 100%;
-  font-weight: 500;
-  margin-bottom: 43px;
+  font-weight: normal;
+  margin-bottom: 37px;
 }
 .gen-service-one__btn {
   font-size: 18px;
@@ -1128,7 +1129,7 @@ About css
   letter-spacing: 6px;
   text-transform: uppercase;
   color: var(--white);
-  font-weight: 500;
+  font-weight: normal;
   margin-bottom: 10px;
   padding-bottom: 0;
 }
