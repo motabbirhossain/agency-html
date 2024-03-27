@@ -622,6 +622,9 @@ button {
 }
 @media (max-width: 767px) {
   .gen-hero-one {
+    padding: 120px 0px;
+  }
+  .gen-hero-one {
     background-image: linear-gradient(200deg, #766bfe 0%, #6321db 100%);
     padding-bottom: 100px;
   }
@@ -696,10 +699,15 @@ button {
 }
 .gen-hero-one__right .gen-thumb__shape-two {
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   left: -10%;
   z-index: 1;
   animation: scaleOne 7s ease-in-out infinite;
+}
+@media (max-width: 767px) {
+  .gen-hero-one__right .gen-thumb__shape-two img, .gen-hero-one__right .gen-thumb__shape-one img{
+   width: 70%;
+  }
 }
 @media (max-width: 575px) {
   .gen-hero-one__right .gen-thumb__shape-two {
@@ -712,21 +720,20 @@ button {
   right: 0%;
   animation: scaleOne 8s ease-in-out infinite;
 }
+@media (max-width: 767px) {
+  .gen-hero-one__right .gen-thumb__shape-three img{
+   width: 70%;
+  }
+}
 @media (max-width: 575px) {
   .gen-hero-one__right .gen-thumb__shape-three {
     display: none;
   }
 }
 .gen-hero-one__thumb {
-  -webkit-mask-image: url(../img/Mask.png);
-  mask-image: url(../img/Mask.png);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: top right;
-          mask-position: top right;
-  margin-top: 20px;
+  margin-top: -20px;
   margin-right: -110px;
-  margin-left: -50px;
+  margin-left: 50px;
   position: relative;
   z-index: 1;
 }
@@ -739,15 +746,18 @@ button {
 }
 @media (max-width: 1199px) {
   .gen-hero-one__thumb {
+    margin-top: 0;
     margin-right: auto;
     margin-left: auto;
   }
+  .gen-hero-one__thumb img {
+    width: 70%;
+  }
+  .gen-hero-one__right {
+    text-align: center;
+  }
 }
 @media (max-width: 800px) {
-  .gen-hero-one__thumb {
-    -webkit-mask: none;
-            mask: none;
-  }
   .gen-hero-one__thumb img {
     width: 80%;
     height: 80%;
@@ -836,6 +846,12 @@ About css
   z-index: -1;
   animation: scaleOne 3s ease-in-out infinite;
 }
+@media (max-width: 767px) {
+  .gen-about-one__shape-two img,
+   .gen-about-one__shape img{
+   width: 80%;
+  }
+}
 @media (max-width: 575px) {
   .gen-about-one__shape-two img {
     -o-object-fit: cover;
@@ -921,7 +937,7 @@ About css
   padding: 110px 0px 120px;
   padding-top: 0;
 }
-@media (max-width: 991px) {
+@media (max-width: 1500px) {
   .gen-service-one {
     background-color: #f3f3f9;
   }
@@ -946,7 +962,7 @@ About css
   background-size: cover;
   z-index: -1;
 }
-@media (max-width: 991px) {
+@media (max-width: 1500px) {
   .gen-service-one__bg {
     display: none;
   }
@@ -1069,6 +1085,7 @@ About css
   font-weight: bold;
   padding-bottom: 0;
   margin-bottom: 18px;
+  line-height: normal;
 }
 .gen-service-one__item__text {
   opacity: 0.812;
@@ -1077,6 +1094,7 @@ About css
   color: var(--base2);
   margin-bottom: 0;
   padding-bottom: 0;
+  font-weight: normal;
 }
 .gen-service-one__icon {
   margin-bottom: 32px;
@@ -1120,6 +1138,9 @@ About css
   .gen-testimonials-one__bg {
     display: none;
   }
+  .gen-testimonials-one .section-top {
+    margin-bottom: 40px;
+  }
 }
 .gen-testimonials-one .section-top {
   margin-bottom: 60px;
@@ -1139,6 +1160,9 @@ About css
     letter-spacing: 3px;
     line-height: 1.2;
     margin-bottom: 10px;
+  }
+  .gen-testimonials-one .section-top {
+    margin-bottom: 30px;
   }
 }
 .gen-testimonials-one .section-title {
@@ -1177,19 +1201,20 @@ About css
   animation: top-bottom 4s ease-in-out infinite;
 }
 .gen-testimonials-one__item {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   max-width: 730px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   overflow: hidden;
-  height: auto;
   border-radius: 20px;
-  /* filter: drop-shadow(0px 30px 35px rgba(103, 48, 226, 0.5)); */
   background-color: var(--white);
   padding: 70px 80px 136px;
   position: relative;
   z-index: 1;
+}
+.owl-item.active{
+  margin-top: 20px;
 }
 @media (max-width: 767px) {
   .gen-testimonials-one__item {
@@ -1202,7 +1227,7 @@ About css
   color: #6a697f;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 }
 @media (max-width: 575px) {
   .gen-testimonials-one__text {
@@ -1291,6 +1316,14 @@ About css
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+@media (max-width:500px) {
+  .gen-testimonials-one__carousel .owl-nav{
+    left: 35%;
+  }
+  .gen-testimonials-one__quite {
+    left: 20%;
+  }
 }
 .gen-testimonials-one__carousel .owl-nav .owl-prev, .gen-testimonials-one__carousel .owl-nav .owl-next {
   width: 50px;
@@ -1469,7 +1502,7 @@ About css
   text-transform: uppercase;
   color: #6422db;
   padding-bottom: 0;
-  font-weight: 500;
+  font-weight: normal;
   margin-bottom: 27px;
 }
 @media (max-width: 575px) {
@@ -1514,6 +1547,7 @@ About css
   width: 100%;
   opacity: 0.812;
   font-size: 20px;
+  font-weight: normal;
   line-height: 36px;
   color: var(--base2);
   margin-bottom: 0;
@@ -1651,6 +1685,11 @@ input:focus + .placeholder-item, .active {
   z-index: 1;
   animation: scaleOne 3s ease-in-out infinite;
 }
+@media (max-width: 1400px) {
+  .gen-contact-one__shape {
+    right: 0%;
+  }
+}
 @media (max-width: 991px) {
   .gen-contact-one__shape {
     display: none;
@@ -1664,11 +1703,11 @@ input:focus + .placeholder-item, .active {
  footer css
  ------------------------------------ */
 .main-footer {
-  padding: 210px 0px 65px;
+  padding: 210px 0px 50px;
   position: relative;
   z-index: 1;
 }
-@media (max-width: 991px) {
+@media (max-width: 1500px) {
   .main-footer {
     background-image: linear-gradient(200deg, #766bfe 0%, #6321db 100%);
     padding: 100px 0px 30px;
@@ -1690,13 +1729,14 @@ input:focus + .placeholder-item, .active {
   background-position: top left;
   z-index: -1;
 }
-@media (max-width: 991px) {
+@media (max-width: 1500px) {
+
   .main-footer__bg {
     display: none;
   }
 }
 .main-footer__top {
-  margin-bottom: 80px;
+  margin-bottom: 62px;
 }
 @media (max-width: 767px) {
   .main-footer__top {
@@ -1733,6 +1773,7 @@ input:focus + .placeholder-item, .active {
   color: var(--white);
   text-transform: capitalize;
   transition: all 0.4s ease-in-out;
+  font-weight: normal;
 }
 .main-footer__link__item a:hover {
   color: var(--black);
@@ -1779,7 +1820,7 @@ input:focus + .placeholder-item, .active {
   color: #f7fbff;
   text-align: center;
   text-transform: capitalize;
-  font-weight: 500;
   margin-bottom: 0;
   padding-bottom: 0;
+  font-weight: normal;
 }

@@ -20,7 +20,7 @@
     autoplay: true,
     nav: true,
     navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
-    
+    margin:5 
 })
 
     //Header Responsive
